@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	width:100%;
+}
+
+body{
+	background-image: url("../images/Wiki-background_update_2.jpg");
+	margin: 10px;
+	color: blue;
+}
+
+.jumbotron{
+	background-color: transparent;
+}
+
+h1{
+	text-align: center;
+}
+
+button{
+	margin: 10px;
+}
+
+.buttons{
+	background: transparent;
+	margin: 10px;
+	text-align: center;
+}
+
+.add{
+	background-color: transparent;
+}
+
+.gifs{
+	background-color: transparent;
+
+}
+
+.gif{
+	margin: 10px;
+
+}
+
+img{
+	float: left;
+
+}
+
+p{
+	position: relative;
+	width: 100%;
+}
