@@ -76,22 +76,23 @@ function displaySimpsonGifs() {
     	for(i=0;i<10;i++){
           // Creates a div to hold the gif
           var newDiv = $("<div>");
+          newDiv.addClass('col-lg-4 col-md-6 col-sm-6 col-xs-12');
 /*          newDiv.attr('width', response.data[i].images.downsized.width+'px');
           newDiv.attr('height', response.data[i].images.downsized.height+'px');
           newDiv.attr('position', 'relative');
 */
           // Creates an element to hold the image
           var newImageDiv = $("<img>");
-          newImageDiv.addClass('gif img-responsive');
+          newImageDiv.addClass('gif img-responsive co-xs-12');
 
- /*         //Creates an element to display the rating
+          //Creates an element to display the rating
           var p = $("<p>");
           p.text("Rating: " + response.data[i].rating);
           p.attr('float', 'left');
           p.attr('position', 'absolute');
           p.attr('left', '0px');
           p.attr('top', '0px');
-*/
+
 
           // Appends the image
           newImageDiv.attr('src', response.data[i].images.downsized_still.url);
@@ -99,7 +100,7 @@ function displaySimpsonGifs() {
           newImageDiv.attr('data-animate', response.data[i].images.downsized.url);
           newImageDiv.attr('data-state', 'still');
 
- //         newDiv.append(p);
+          newDiv.append(p);
           newDiv.append(newImageDiv);
 
 
